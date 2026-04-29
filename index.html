@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harsh Shah - Personal Website</title>
+    <meta name="description" content="Harsh Shah - AI Researcher and Data Scientist portfolio featuring projects, writing, talks, and teaching.">
+    <title>Harsh Shah | AI Researcher & Data Scientist</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class = "container">
+        <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="#home">HARSH SHAH - work in progress(dummy content)</a>
+                    <a href="#home">Harsh Shah</a>
                 </div>
                 <nav>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#posts">Posts</a></li>
-                        <li><a href="#talks">Talks</a></li>
                         <li><a href="#teaching">Teaching</a></li>
                         <li><a href="#cv">CV</a></li>
                     </ul>
@@ -28,93 +28,124 @@
     </header>
 
     <main>
-        <div class = "container">
+        <div class="container">
             <section id="home">
                 <div class="profile-container">
-                    <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+                    <div class="profile-avatar-wrap">
+                        <img src="profile.jpg" alt="Harsh Shah profile photo" class="profile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="profile-avatar" aria-label="Harsh Shah initials">HS</div>
+                    </div>
                     <h1>Harsh Shah</h1>
-                    <h2>AI Researcher</h2>
-                    <h2>Data Scientist</h2>
+                    <p class="role">I build practical AI and ML systems for real-world products.</p>
                     <div class="social-media">
-                        <a href="mailto:shahharsh2712@gmail.com"><img src="email-icon.png" alt="Email"></a>
-                        <a href="https://linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-                        <a href="https://twitter.com"><img src="twitter-icon.png" alt="Twitter"></a>
-                        <a href="https://github.com"><img src="github-icon.png" alt="GitHub"></a>
+                        <a href="mailto:shahharsh2712@gmail.com?subject=Hello%20Harsh&body=Hi%20Harsh%2C%0A%0AI%20found%20your%20portfolio%20and%20wanted%20to%20connect.">Email</a>
+                        <a href="https://github.com/shahharsh2712" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/in/shahharsh2712/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </div>
                 </div>
                 <div class="bio">
-                    <!-- <h3>Bio</h3>   -->  
+                    <h2>About</h2>
                     <p>
-                        I'm a Data Scientist with strong problem-solving skills and over 2 years of experience in developing and deploying data-driven applications. I am skilled in Prompt Engineering, Retrieval Augmented Generation (RAG), Natural Language Processing (NLP), Machine Learning (ML), Data Analysis, Web Scraping, and Web Development. I am proficient in Python, C++ and JavaScript and have developed several web applications.
+                        I am an AI/ML practitioner with a Computer Science background and a Master's in Data Science from San Fancisco. I focus on building systems that connect strong modeling with practical product execution.
                     </p>
                     <p>
-                        I did my undergrad in Computer Science and recently graduated with Masters in Data Science, where I learnt latest skills and methods in machine learning, data mining, and data visualization. Currently, I'm doing an internship at an AI startup where I'm building LLM based applications. I am always looking to learn new technologies and am currently exploring Generative AI.
+                        My work spans machine learning, NLP, and LLM-based applications, including retrieval pipelines, classification systems, and evaluation-driven development. I enjoy solving ambiguous problems with structured, data-driven approaches.
                     </p>
                     <p>
-                        I am open to exploring new opportunities and collaborating on exciting tech projects. Let's connect! You can reach me via direct message or at <a href="mailto:shahharsh0227@gmail.com">shahharsh2712@gmail.com</a>.
+                        I am currently open to AI/ML roles, applied research collaborations, and product-focused data science opportunities. If you are working on interesting problems, reach out at <a href="mailto:shahharsh2712@gmail.com">shahharsh2712@gmail.com</a>.
                     </p>
                 </div>
             </section>
 
-            <section id="posts">
-                <div class="posts-container">
-                    <div class="posts-title">
-                        <h2>Blog Posts</h2>
-                    </div>
-                    <div class="posts-content">
-                        <div class="post">
-                            <div class="post-meta">Jan 22, 2020 · 15 min read · 3 Comments</div>
-                            <h3>The Next Generation of Machine Learning Tools</h3>
-                            <p class="post-excerpt">Have you ever wondered how will the machine learning frameworks of the '20s look like? In this essay, I examine the directions AI research might take and the requirements they impose on the tools at our disposal, concluding with an overview of what I believe to be the two strong candidates: JAX and S4TF.</p>
-                            <a href="#" class="read-more">Continue Reading</a>
-                        </div>
-                        
-                        <div class="post">
-                            <div class="post-meta">Mar 15, 2020 · 12 min read · 5 Comments</div>
-                            <h3>Demystifying Transformer Architecture in NLP</h3>
-                            <p class="post-excerpt">Transformers have revolutionized natural language processing tasks. In this post, we'll dive deep into the architecture of transformers, exploring their key components such as self-attention mechanisms and positional encodings. We'll also discuss how they overcome limitations of traditional RNNs and their impact on modern NLP applications.</p>
-                            <a href="#" class="read-more">Continue Reading</a>
-                        </div>
-                        
-                        <div class="post">
-                            <div class="post-meta">May 7, 2020 · 10 min read · 2 Comments</div>
-                            <h3>Ethical Considerations in AI Development</h3>
-                            <p class="post-excerpt">As AI continues to advance rapidly, it's crucial to address the ethical implications of these technologies. This post explores key ethical considerations in AI development, including bias in machine learning models, privacy concerns with data collection, and the potential societal impacts of AI-driven decision making. We'll also discuss strategies for developing more responsible and transparent AI systems.</p>
-                            <a href="#" class="read-more">Continue Reading</a>
-                        </div>
-                    </div>
+            <section id="projects" class="content-section">
+                <h2>Projects</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Web Scraping and Text Classification</h3>
+                        <p><strong>Problem:</strong> Build a pipeline to collect unstructured web data and classify text at scale.</p>
+                        <p><strong>What I built:</strong> End-to-end crawler and NLP classification workflow with preprocessing and model training.</p>
+                        <p><strong>Tech:</strong> Python, NLP, machine learning, web scraping.</p>
+                        <a href="https://github.com/shahharsh2712/Web-Scraping-and-Text-Classification" class="read-more" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    </article>
+                    <article class="card">
+                        <h3>Customer Segmentation Using Credit Card Data</h3>
+                        <p><strong>Problem:</strong> Understand distinct customer groups from credit card behavior data.</p>
+                        <p><strong>What I built:</strong> Segmentation pipeline to identify behavioral clusters for better targeting.</p>
+                        <p><strong>Tech:</strong> Python, unsupervised learning, data analysis, visualization.</p>
+                        <a href="https://github.com/shahharsh2712/Customer-Segmentation-using-Credit-Card-Data" class="read-more" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    </article>
+                    <article class="card">
+                        <h3>Customer Churn Prediction</h3>
+                        <p><strong>Problem:</strong> Predict users likely to churn and support proactive retention.</p>
+                        <p><strong>What I built:</strong> Supervised learning pipeline for churn risk scoring and decision support.</p>
+                        <p><strong>Tech:</strong> Python, classification models, feature engineering, model evaluation.</p>
+                        <a href="https://github.com/shahharsh2712/Customer-Churn-Prediction" class="read-more" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    </article>
                 </div>
             </section>
 
-            <section id="projects">
-                <div class="projects-container">
-                    <div class="projects-title">
-                        <h2>Projects</h2>
-                    </div>
-                    <div class="projects-content">
-                        <div class="project-card">
-                            <h3>REAVER: MODULAR DEEP REINFORCEMENT LEARNING</h3>
-                            <p>Modular DRL framework with a focus on StarCraft II, following in DeepMind's footsteps, replicating results. Created with performance, extensibility, and reproducibility in mind. Works with Gym, Atari, and MuJoCo as well.</p>
-                        </div>
-                        <div class="project-card">
-                            <h3>STARTER AGENT FOR CODERS STRIKE BACK AI CHALLENGE</h3>
-                            <p>Starter bot for an AI programming challenge. Includes fast simulation engine and basic building blocks necessary to implement a competitive bot. Written in C++.</p>
-                        </div>
-                        <!-- Add more project cards as needed -->
-                    </div>
+            <section id="tech-stack" class="content-section">
+                <h2>Tech Stack</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>AI / ML</h3>
+                        <p>Machine Learning, NLP, Prompt Engineering, RAG, LLM Applications</p>
+                    </article>
+                    <article class="card">
+                        <h3>Programming</h3>
+                        <p>Python, JavaScript, C++, SQL</p>
+                    </article>
+                    <article class="card">
+                        <h3>Data & Delivery</h3>
+                        <p>Data Analysis, Feature Engineering, API Integration, End-to-End Prototyping</p>
+                    </article>
                 </div>
             </section>
 
-            <section id="youtube">
-                <h2>YouTube</h2>
-                <!-- YouTube videos or playlist goes here -->
+            <section id="posts" class="content-section">
+                <h2>Posts</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <p class="meta">LinkedIn Post</p>
+                        <h3>Open Source AI Meetup at Exploratorium</h3>
+                        <p>Reflections on attending a Hugging Face open-source AI meetup and meeting Prof. Andrew Ng.</p>
+                        <a href="https://www.linkedin.com/posts/shahharsh2712_woodstockai-huggingface-ai-activity-7048326887030345728-Q4Rs?utm_source=share&utm_medium=member_desktop&rcm=ACoAACV_KccBZSGPd7dOG-9FxOXARBR2DeRXT10" class="read-more" target="_blank" rel="noopener noreferrer">Read post</a>
+                    </article>
+                    <article class="card">
+                        <p class="meta">LinkedIn Post</p>
+                        <h3>DeepSeek, Reasoning, and Language Mixing</h3>
+                        <p>A thought on multilingual expression, Hinglish, and how real-world language behavior compares with LLM assumptions.</p>
+                        <a href="https://www.linkedin.com/posts/shahharsh2712_artificialintelligence-llms-reasoning-activity-7290413433882099713-ETEp?utm_source=share&utm_medium=member_desktop&rcm=ACoAACV_KccBZSGPd7dOG-9FxOXARBR2DeRXT10" class="read-more" target="_blank" rel="noopener noreferrer">Read post</a>
+                    </article>
+                    <article class="card">
+                        <p class="meta">LinkedIn Post</p>
+                        <h3>Farmer Duplicate Detection ML System</h3>
+                        <p>A build log for an end-to-end fraud-detection pipeline covering feature engineering, APIs, and feedback-driven retraining.</p>
+                        <a href="https://www.linkedin.com/posts/shahharsh2712_github-shahharsh2712farmer-duplicate-detection-activity-7455247447150223360-lQsE?utm_source=share&utm_medium=member_desktop&rcm=ACoAACV_KccBZSGPd7dOG-9FxOXARBR2DeRXT10" class="read-more" target="_blank" rel="noopener noreferrer">Read post</a>
+                    </article>
+                </div>
             </section>
 
-            <section id="cv">
+            <section id="teaching" class="content-section">
+                <h2>Teaching</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Mentoring</h3>
+                        <p>Helping students and early-career developers learn ML fundamentals and project execution.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Workshops</h3>
+                        <p>Hands-on sessions on NLP pipelines, prompt engineering, and practical GenAI application design.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="cv" class="content-section">
                 <h2>CV</h2>
-                <!-- Add CV download link or embed -->
+                <p>You can download my latest resume here:</p>
+                <a href="cv.pdf" class="read-more" download>Download Resume (PDF)</a>
             </section>
         </div>
-    </main>    
+    </main>
 </body>
 </html>
